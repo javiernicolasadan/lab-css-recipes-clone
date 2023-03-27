@@ -1,9 +1,6 @@
 /* CSS RESET - do not remove */
 /* Reset default browser styles and provide a consistent starting point */
 
-
-
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -24,22 +21,18 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   
 }
 
+
 /*  Set the font */
 body {
   font-family: "Helvetica", sans-serif;
   
 }
 
-.heroimage {
-  text-align: center;
-  
-  width: 100%;
-
-}
 
 .container {
-  width: 600px;
+  width: 800px;
   margin: 0 auto;
+  text-align: justify;
  
 }
 
@@ -53,18 +46,77 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.ingredients {
+.heroimage {
   text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+
+}
+
+.ingredients {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  
 }
 
 .info {
-  text-align: center;
-  color: black;
+  width: 800px;
+  margin: 0 auto;
+  text-align: justify;
 }
 
 .imageclass {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
 
 }
+
+h4 {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.predirections {
+  width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+ 
+}
+
+.thirdimage {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#first-list {
+  text-align: left;
+  list-style-type: none;
+}
+
+#first-list li::before {
+  content: "-";
+  margin-right: 10px;
+}
+
+#second-list {
+  list-style: none;
+
+}
+
+#second-list > li {
+  counter-increment: listcounter
+}
+
+#second-list > li::before {
+  content : counter(listcounter) ")";
+}
+
 
 
 /* STYLES */
